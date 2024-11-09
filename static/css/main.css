@@ -170,16 +170,13 @@ footer .footer-navbar a {
   html {
     height: 100%;
   }
-
+  
   .content {
     width: initial;
     padding: 20px 30px;
     height: calc(100% - 40px);
     align-items: flex-end;
-  }
-
-  body {
-    margin-top: -30px; /* 向上移动，避免与 footer 重叠 */
+    margin-top: -30px; /* 向上移动 .content */
   }
 }
 
@@ -188,9 +185,7 @@ footer .footer-navbar a {
     overflow-x: hidden;
   }
 
-  body {
-    margin-top: -30px; /* 向上移动，避免与 footer 重叠 */
+  .content {
+    margin-top: -30px; /* 在更小屏幕上向上移动 .content */
   }
-
-
 }
