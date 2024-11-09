@@ -100,6 +100,27 @@ header {
   z-index: 1000; /* Ensure navbar is on top of all other elements */
 }
 
+/* Navbar Styles */
+.navbar {
+  display: flex; /* Use flex layout */
+  justify-content: space-between; /* Evenly distribute the links */
+  position: absolute;
+  top: 0;
+  left: 5%; /* 5% space from the left */
+  right: 5%; /* 5% space from the right */
+  width: 90%; /* Navbar width occupies 90% of the window */
+  font-size: 15px; /* Font size */
+  color: white; /* Text color */
+  text-transform: uppercase; /* Transform text to uppercase */
+  font-family: Arial, sans-serif; /* Font family */
+}
+
+.navbar a {
+  margin: 0; /* Remove margin */
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent (white) */
+}
+
 nav {
   margin: 50px 0;
 }
