@@ -135,46 +135,7 @@ nav > a:last-child {
   padding-right: 0;
 }
 
-/* 下拉菜单的样式 */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
 
-.dropdown-content {
-  display: none; /* 默认隐藏 */
-  position: absolute;
-  top: 150%; /* 下拉菜单在按钮的正下方 */
-  left: 50%; /* 定位到父容器的中心 */
-  transform: translateX(-50%); /* 水平居中对齐 */
-  background-color: rgba(255, 255, 255, 0.6); /* 半透明白色背景 */
-  min-width: 120px; /* 缩小框的宽度 */
-  padding: 8px 0;
-  border-radius: 8px; /* 圆角 */
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* 柔和阴影效果 */
-  backdrop-filter: blur(8px); /* 添加模糊效果，模拟玻璃效果 */
-  -webkit-backdrop-filter: blur(8px); /* 兼容Safari */
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: #333; /* 深色文字 */
-  padding: 10px 16px;
-  text-decoration: none;
-  display: block;
-  font-size: 12px; /* 较小字体 */
-  transition: background-color 0.3s; /* 平滑过渡 */
-  border-radius: 6px; /* 选项的圆角 */
-}
-
-.dropdown-content a:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* 悬停时微微变浅 */
-}
-
-/* 悬停显示下拉菜单 */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 
 /* Footer Styles */
 footer {
