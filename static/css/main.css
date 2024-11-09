@@ -44,6 +44,7 @@ html {
   height: 100vh;
   overflow: hidden;
 }
+
 body {
   font-size: 1.2em;
 }
@@ -110,9 +111,9 @@ header {
   justify-content: space-between; /* Evenly distribute the links */
   position: absolute;
   top: 0;
-  left: 5%; /* 5% space from the left */
-  right: 5%; /* 5% space from the right */
-  width: 90%; /* Navbar width occupies 90% of the window */
+  left: 4%; /* 5% space from the left */
+  right: 4%; /* 5% space from the right */
+  width: 92%; /* Navbar width occupies 90% of the window */
   font-size: 15px; /* Font size */
   color: white; /* Text color */
   text-transform: uppercase; /* Transform text to uppercase */
@@ -126,16 +127,11 @@ header {
 }
 
 nav {
-  margin: 50px 0;
+  margin: 3vh 0;
 }
 
 nav > a:last-child {
   padding-right: 0;
-}
-
-/* Content Margin Adjustment to Prevent Overlap */
-body {
-  margin-top: 60px; /* Adjust this based on the navbar height */
 }
 
 /* Responsive Styles */
