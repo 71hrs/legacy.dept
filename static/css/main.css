@@ -170,6 +170,7 @@ footer .footer-navbar a {
   html {
     height: 100%;
   }
+
   .content {
     width: initial;
     padding: 20px 30px;
@@ -191,11 +192,5 @@ footer .footer-navbar a {
     margin-top: -30px; /* 向上移动，避免与 footer 重叠 */
   }
 
-  header {
-    justify-content: flex-start;
-  }
 
-  nav {
-    margin: 50px 0 30px;
-  }
 }
