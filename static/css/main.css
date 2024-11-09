@@ -114,10 +114,11 @@ header {
   left: 4%; /* 5% space from the left */
   right: 4%; /* 5% space from the right */
   width: 92%; /* Navbar width occupies 90% of the window */
-  font-size: 15px; /* Font size */
+  font-size: 13px; /* Font size */
   color: white; /* Text color */
   text-transform: uppercase; /* Transform text to uppercase */
   font-family: Arial, sans-serif; /* Font family */
+  font-weight: bold; /* 设置加粗 */
 }
 
 .navbar a {
