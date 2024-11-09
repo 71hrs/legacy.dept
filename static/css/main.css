@@ -137,23 +137,32 @@ nav > a:last-child {
 
 /* Footer Styles */
 footer {
-  position: fixed;        /* 使用 fixed 定位，让 footer 始终固定在页面底部 */
-  bottom: 0;              /* 底部对齐 */
-  left: 0;                /* 左对齐 */
-  width: 100%;            /* 宽度占满整个页面 */
-  z-index: 999;           /* 确保 footer 在其他元素之上 */
+  position: fixed;        /* Use fixed positioning to keep footer at the bottom */
+  bottom: 0;              /* Align at the bottom */
+  left: 4%;               /* Same 4% left space as navbar */
+  right: 4%;              /* Same 4% right space as navbar */
+  width: 92%;             /* Ensure it spans 92% of the window width */
+  z-index: 999;           /* Ensure footer is above other content */
+  box-sizing: border-box; /* Make sure padding doesn't affect width calculation */
 }
 
-/* Footer navbar 样式 */
-footer .navbar {
-  display: flex;                /* 使用 flex 布局 */
-  justify-content: space-between; /* 均匀分布链接 */
-  position: relative;           /* 相对定位，确保在 footer 内部 */
-  padding: 10px 20px;           /* 上下左右的内边距 */
-  font-size: 13px;              /* 设置字体大小 */
-  color: white;                 /* 设置字体颜色为白色 */
-  text-transform: uppercase;    /* 将文本转换为大写 */
-  font-family: Arial, sans-serif; /* 设置字体 */
+/* Footer navbar styles */
+footer .footer-navbar {
+  display: flex;                /* Use flex layout */
+  justify-content: space-between; /* Evenly distribute the links */
+  position: relative;           /* Relative positioning within footer */
+  padding: 10px 0;              /* Top and bottom padding */
+  font-size: 13px;              /* Font size */
+  color: white;                 /* Text color */
+  text-transform: uppercase;    /* Uppercase text */
+  font-family: Arial, sans-serif; /* Font family */
+  font-weight: bold;            /* Bold text */
+}
+
+footer .footer-navbar a {
+  margin: 0; /* Remove margin */
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
 }
 
 /* Responsive Styles */
