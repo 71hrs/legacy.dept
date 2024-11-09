@@ -1,22 +1,11 @@
-/* 导航栏样式 */
-.navbar {
-    display: flex;
-    justify-content: space-evenly; /* 按钮均匀分布 */
-    align-items: center;
-    padding: 5px 0;
-    position: fixed;
-    top: 20px; /* 根据调整的比例，计算出顶部距离 */
-    width: 100%;
-    z-index: 1000;
-    background-color: transparent; /* 无背景色 */
+.navbar a {
+    text-transform: uppercase; /* 将字母转为大写 */
+    color: white; /* 字体颜色为白色 */
+    font-size: 14px; /* 字体大小为14px */
+    text-decoration: none; /* 去掉默认的下划线 */
 }
 
-/* 导航按钮样式 */
-.navbar a {
-    color: white; /* 字体颜色固定为白色 */
-    text-decoration: none;
-    font-size: 12px;
-    position: relative;
-    padding: 5px; /* 内边距，调整按钮大小 */
-    transition: none; /* 去掉字体颜色的过渡效果 */
+.navbar a:hover {
+    color: white; /* 在hover时保持白色 */
+    text-decoration: none; /* 在hover时保持无下划线 */
 }
