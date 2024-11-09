@@ -1,39 +1,39 @@
 /* 导航栏样式 */
 .navbar {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; /* 按钮均匀分布 */
     align-items: center;
-    padding: 5px 0; /* 调整顶部和底部的间距，减少高度 */
+    padding: 5px 0;
     position: fixed;
-    top: 0;
+    top: 20px; /* 根据调整的比例，计算出顶部距离 */
     width: 100%;
     z-index: 1000;
+    background-color: transparent; /* 无背景色 */
 }
 
 /* 导航按钮样式 */
 .navbar a {
-    color: white;
+    color: white; /* 字体颜色固定为白色 */
     text-decoration: none;
     font-size: 18px;
     position: relative;
-    padding: 5px; /* 减少顶部的间距 */
-    transition: color 0.3s ease; /* 文字颜色的过渡效果 */
+    padding: 5px; /* 内边距，调整按钮大小 */
+    transition: none; /* 去掉字体颜色的过渡效果 */
 }
 
-/* 去除原本的背景 */
+/* 悬停效果：下划线从中间向两边展开 */
 .navbar a::before {
     content: ''; /* 创建下划线 */
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: -3px;
+    bottom: -3px; /* 文字下方的距离 */
     left: 50%;
-    background-color: white;
-    transition: width 0.3s ease, left 0.3s ease; /* 动画从中心向两边展开 */
+    background-color: white; /* 下划线颜色 */
+    transform: translateX(-50%); /* 初始位置在中心 */
+    transition: width 0.3s ease; /* 从中心向两边展开的动画 */
 }
 
-/* 悬停效果 */
 .navbar a:hover::before {
-    width: 100%;
-    left: 0;
+    width: 100%; /* 悬停时，下划线展开到100% */
 }
