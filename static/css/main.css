@@ -170,7 +170,6 @@ footer .footer-navbar a {
   html {
     height: 100%;
   }
-  
   .content {
     width: initial;
     padding: 20px 30px;
@@ -179,8 +178,7 @@ footer .footer-navbar a {
   }
 
   body {
-    margin-top: -20px; /* 向上移动，避免与 footer 重叠 */
-    padding-bottom: 50px; /* 增加底部空间，确保 footer 不会重叠 */
+    margin-top: -30px; /* 向上移动，避免与 footer 重叠 */
   }
 }
 
@@ -190,9 +188,7 @@ footer .footer-navbar a {
   }
 
   body {
-    position: relative;
-    margin-top: -30px; /* 在更小屏幕上进一步上移 */
-    padding-bottom: 60px; /* 增加底部间距 */
+    margin-top: -30px; /* 向上移动，避免与 footer 重叠 */
   }
 
   header {
