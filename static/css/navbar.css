@@ -1,11 +1,20 @@
-.navbar a {
-    text-transform: uppercase; /* 将字母转为大写 */
-    color: white; /* 字体颜色为白色 */
-    font-size: 14px; /* 字体大小为14px */
-    text-decoration: none; /* 去掉默认的下划线 */
+/* 确保这个 CSS 具有最高优先级 */
+.navbar {
+    display: flex; /* 使用 flex 布局来均匀分布链接 */
+    justify-content: space-between; /* 将链接均匀分布 */
+    position: absolute;
+    top: 0;
+    left: 5%;  /* 左侧留出 5% 的空白 */
+    right: 5%; /* 右侧留出 5% 的空白 */
+    width: 90%; /* 导航栏宽度占整个窗口的 80%，左右各空 5% */
+    font-size: 15px; /* 设置字体大小为 15px */
+    color: white; /* 设置字体颜色为白色 */
+    text-transform: uppercase; /* 将文本全部转换为大写 */
+    font-family: Arial, sans-serif; /* 设置字体为 Arial 或默认无衬线字体 */
 }
 
-.navbar a:hover {
-    color: white; /* 在hover时保持白色 */
-    text-decoration: none; /* 在hover时保持无下划线 */
+.navbar a {
+    margin: 0; /* 移除链接的默认外边距 */
+    text-decoration: none; /* 移除链接的下划线 */
+    color: inherit; /* 确保链接继承父元素的字体颜色 */
 }
