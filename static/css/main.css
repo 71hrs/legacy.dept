@@ -200,26 +200,32 @@ footer .footer-navbar a {
 
 /* service page */
 
-/* 磨砂玻璃效果的盒子 */
+/* 主容器样式 */
 .frosted-glass {
+  display: flex;
+  gap: 20px; /* 左右内容之间的间距 */
   position: absolute;
   top: 8%;
   bottom: 10%;
-  left: 3.9%;
-  right: 3.9%;
+  left: 3.8%;
+  right: 3.8%;
   padding: 20px;
   background: rgba(255, 255, 255, 0.2); /* 半透明白色背景 */
-  border-radius: 15px; /* 圆角效果 */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 阴影 */
-  backdrop-filter: blur(10px); /* 背景模糊效果 */
-  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); 
   color: #333;
 }
 
-.frosted-glass h2 {
+/* 左右分区样式 */
+.left-section, .right-section {
+  flex: 1; /* 左右内容各占一半宽度 */
+}
+
+.left-section h2 {
   margin-top: 0;
 }
 
-.frosted-glass p {
-  margin-bottom: 0;
+.right-section h3 {
+  margin-top: 0;
 }
