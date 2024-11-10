@@ -135,8 +135,6 @@ nav > a:last-child {
   padding-right: 0;
 }
 
-
-
 /* Footer Styles */
 footer {
   position: fixed;        /* Use fixed positioning to keep footer at the bottom */
@@ -215,11 +213,14 @@ footer .footer-navbar a {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px); 
   color: #333;
+  align-items: center; /* 上下居中对齐 */
 }
 
 /* 左右分区样式 */
 .left-section, .right-section {
   flex: 1; /* 左右内容各占一半宽度 */
+  padding-left: 7px; /* 左边距 */
+  padding-right: 7px; /* 右边距 */
 }
 
 .left-section h2 {
